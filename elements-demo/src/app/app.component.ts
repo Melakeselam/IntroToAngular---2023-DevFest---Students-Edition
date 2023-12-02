@@ -9,4 +9,9 @@ export class AppComponent {
   title = 'elements-demo';
   username!: string;
   password!: string;
+  validate: boolean = false;
+
+  onValidate() {
+    this.validate = !this.validate;
+  }
 }

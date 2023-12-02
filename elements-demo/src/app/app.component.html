@@ -21,15 +21,20 @@
     <div class="col-sm-9">
     </div>
     <div class="col-sm-3">
-      <button type="button" class="btn btn-outline-success">Add</button>
+      <button type="button" class="btn btn-outline-success" (click)="onAdd(m.value)">Add</button>
     </div>
   </div>
 
   <div class="row mt-3">
-    <div class="col-sm-3"></div>
-    <div class="col-sm-6">
+    <div class="col-sm-4"></div>
+    <div class="col-sm-4">
 
-      <!-- Add code here -->
+      <table>
+        <tr *ngFor="let member of members; index as i">
+          <th class="pe-4">{{i}}</th>
+          <td>{{member}}</td>
+        </tr>
+      </table>
 
     </div>
     <div class="col-sm-3"></div>

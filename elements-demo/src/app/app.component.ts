@@ -8,4 +8,9 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'elements-demo';
   members: string[] = [];
+
+  onAdd(newMember: string) {
+    if (newMember)
+      this.members.push(newMember);
+  }
 }

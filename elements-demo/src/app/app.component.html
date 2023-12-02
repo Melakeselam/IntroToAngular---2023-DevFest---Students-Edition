@@ -7,7 +7,7 @@
 
       <div class="input-group">
         <div class="input-group-prepend">
-          <span class="input-group-text demo-component-input-lbl" style="border-radius: 10px 0 0 10px;">Username:</span>
+          <span class="input-group-text demo-component-input-lbl" style="border-radius: 10px 0 0 10px;">Member:</span>
         </div>
         <input type="text" id="username" class="form-control demo-component-input" style="border-radius: 0 10px 10px 0;"
           autocomplete="off" #u (blur)="username = u.value">
@@ -18,27 +18,23 @@
   </div>
 
   <div class="row mt-3">
-    <div class="col-sm-3"></div>
-    <div class="col-sm-6">
-
-      <div class="input-group">
-        <div class="input-group-prepend">
-          <span class="input-group-text demo-component-input-lbl" style="border-radius: 10px 0 0 10px;">Password:</span>
-        </div>
-        <input type="text" id="password" class="form-control demo-component-input" style="border-radius: 0 10px 10px 0;"
-          autocomplete="off" #p (blur)="password = p.value">
-      </div>
-
-    </div>
-    <div class="col-sm-3"></div>
-  </div>
-
-  <div class="row mt-3">
     <div class="col-sm-9">
     </div>
     <div class="col-sm-3">
-      <button type="button" class="btn btn-outline-warning">Validate</button>
+      <button type="button" class="btn btn-outline-success">Add</button>
     </div>
   </div>
+
+  <div class="row mt-3">
+    <div class="col-sm-3"></div>
+    <div class="col-sm-6">
+
+      <!-- Add code here -->
+
+    </div>
+    <div class="col-sm-3"></div>
+  </div>
+
+
 
 </div>

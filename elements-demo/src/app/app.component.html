@@ -10,11 +10,14 @@
           <span class="input-group-text demo-component-input-lbl" style="border-radius: 10px 0 0 10px;">Name:</span>
         </div>
         <input type="text" id="name" class="form-control demo-component-input" style="border-radius: 0 10px 10px 0;"
-          autocomplete="off">
+          autocomplete="off" #in (blur)="name = in.value">
       </div>
 
     </div>
     <div class="col-sm-3"></div>
+  </div>
+  <div class="row">
+    <display-message [user]="name"></display-message>
   </div>
 
 </div>

@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'elements-demo';
+  placeholder = 'Enter appropriate username'
 }
